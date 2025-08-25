@@ -6,9 +6,11 @@ function App() {
 
   return (
     <>
-        < MyComponent text={'Hello 1'} />
-        < MyComponent text={'Hello 2'} />
-        < MyComponent text={'Hello 3'} />
+        < MyComponent title={'title 1 це батьківський комконент'} >
+            Це children батьківського компонента
+        </ MyComponent >
+        < MyComponent title={'title 2'} />
+        < MyComponent title={'title 3'} />
     </>
   )
 }

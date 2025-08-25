@@ -1,11 +1,16 @@
-import type {FC} from "react";
+import type {FC, ReactNode} from "react";
+import './MyComponent.css'
 
-type MyComponentPropType = {text: string}
+type MyComponentPropType = {
+    title: string;
+    children?: ReactNode;
+}
 
-const MyComponent: FC<MyComponentPropType> = ({text}) => {
+const MyComponent: FC<MyComponentPropType> = ({title, children}) => {
     return (
-        <div>
-            {text}
+        <div className = {'target'}>
+            <h2>{title}</h2>
+            <p>{children}</p>
         </div>
     );
 };

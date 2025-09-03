@@ -1,27 +1,22 @@
 import './App.css'
+import {CoursesComponentInterface} from "./component/coursesComponentInterface/CoursesComponentInterface.tsx";
 
-const coursesTitleArray: string[] = [
-    'JavaScript Complex',
-    'Java Complex',
-    'Python Complex',
-    'QA Complex',
-    'Fullstack',
-    'Frontend'
-];
+
 
 
 const App = () => {
 
   return (
     <>
-        <ul>
-            {
-                coursesTitleArray.map((value, index) => <li key={index}>{value}</li>)
-            }
-
-        </ul>
+      <CoursesComponentInterface />
     </>
   )
 }
 
 export default App
+
+// з arrays.js взяти масив coursesAndDurationArray. +
+
+// Вивести кожен його елемент, створивши необхідні моделі та компоненти +
+
+// Стилізація довільна, але обов’язково підключена і мінімально зроблена (хоча б один стиль, який працює).

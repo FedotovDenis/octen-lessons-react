@@ -1,5 +1,5 @@
 import './App.css'
-import {CoursesComponentInterface} from "./component/coursesComponentInterface/CoursesComponentInterface.tsx";
+import {FamilyComponent} from "./components/family-component/FamilyComponent.tsx";
 
 
 
@@ -8,15 +8,9 @@ const App = () => {
 
   return (
     <>
-      <CoursesComponentInterface />
+      <FamilyComponent/>
     </>
   )
 }
 
 export default App
-
-// з arrays.js взяти масив coursesAndDurationArray. +
-
-// Вивести кожен його елемент, створивши необхідні моделі та компоненти +
-
-// Стилізація довільна, але обов’язково підключена і мінімально зроблена (хоча б один стиль, який працює).

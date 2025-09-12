@@ -1,0 +1,39 @@
+h3 {
+    background: dodgerblue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 15%;
+    text-align: center;
+}
+
+h3:hover {
+    background: lightsteelblue;
+}
+ p{
+     background: dodgerblue;
+     color: black;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 10px;
+     width: auto;
+     text-align: center;
+ }
+
+ p:hover {
+    background: lightblue;
+ }
+
+ img{
+     width: 200px;
+     height: 350px;
+     border-radius: 10px;
+     border: 1px solid black;
+     margin: 10px;
+     padding: 10px;
+     box-shadow: 0 0 10px black;
+     cursor: pointer;
+
+ }
+

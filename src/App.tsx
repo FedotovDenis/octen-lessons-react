@@ -1,6 +1,7 @@
 import './App.css'
-import {FamilyComponent} from "./components/family-component/FamilyComponent.tsx";
-
+import {
+  CoursesArrayInterfaceMapComponent
+} from "./components/courses-array-interface-map-component/CoursesArrayInterfaceMapComponent.tsx";
 
 
 
@@ -8,7 +9,7 @@ const App = () => {
 
   return (
     <>
-      <FamilyComponent/>
+      <CoursesArrayInterfaceMapComponent/>
     </>
   )
 }

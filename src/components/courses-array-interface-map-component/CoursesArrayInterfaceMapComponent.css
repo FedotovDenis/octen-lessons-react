@@ -1,0 +1,16 @@
+.courses-array-interface-map-component{
+    background: lightsteelblue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+ul{
+    padding: 10px;
+}
+
+li{
+    width: auto;
+}

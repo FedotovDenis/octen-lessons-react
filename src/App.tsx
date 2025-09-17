@@ -1,15 +1,23 @@
 import './App.css'
-import MyComponent from "./components/MyComponent.tsx";
+import {useState} from "react";
 
+const App = () => {
 
-function App() {
+    let [counter, setCounter] = useState(0);
 
   return (
-    <>
-        < MyComponent text={'Hello 1'} />
-        < MyComponent text={'Hello 2'} />
-        < MyComponent text={'Hello 3'} />
-    </>
+    <div>
+
+        <h1>{counter}</h1>
+
+        <button onClick={() => {
+            setCounter(++counter)
+        }}>increment</button>
+
+        <button onClick={() => {
+            setCounter(counter--)
+        }}>decrement</button>
+    </div>
   )
 }
 

@@ -1,14 +1,15 @@
 import './App.css'
-import MyComponent from "./components/MyComponent.tsx";
+import UsersComponent from "./components/users-component/UsersComponent.tsx";
 
 
-function App() {
+const App = ()=> {
 
   return (
     <>
-        < MyComponent text={'Hello 1'} />
-        < MyComponent text={'Hello 2'} />
-        < MyComponent text={'Hello 3'} />
+      <div>
+        <UsersComponent/>
+      </div>
+
     </>
   )
 }

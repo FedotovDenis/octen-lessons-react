@@ -2,4 +2,4 @@
 
     lessons 2.
 
-        Service layer
+        State lift

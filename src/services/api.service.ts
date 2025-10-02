@@ -14,5 +14,6 @@ const getUser = async (id: string) :Promise<IUser> => {
 
 export {
     getUsers,
+
     getUser
 }

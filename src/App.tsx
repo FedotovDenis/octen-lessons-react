@@ -1,14 +1,13 @@
 import './App.css'
-import MyComponent from "./components/MyComponent.tsx";
+import {TodosComponent} from "./component/todos-component/TodosComponent.tsx";
+
 
 
 function App() {
 
   return (
     <>
-        < MyComponent text={'Hello 1'} />
-        < MyComponent text={'Hello 2'} />
-        < MyComponent text={'Hello 3'} />
+      <TodosComponent/>
     </>
   )
 }

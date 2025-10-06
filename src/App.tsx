@@ -1,14 +1,12 @@
 import './App.css'
-import MyComponent from "./components/MyComponent.tsx";
+import {PostsComponent} from "./components/posts-component/PostsComponent.tsx";
 
 
 function App() {
 
   return (
     <>
-        < MyComponent text={'Hello 1'} />
-        < MyComponent text={'Hello 2'} />
-        < MyComponent text={'Hello 3'} />
+        <PostsComponent/>
     </>
   )
 }

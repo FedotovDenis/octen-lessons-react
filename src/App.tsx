@@ -1,14 +1,13 @@
-import './App.css'
-import MyComponent from "./components/MyComponent.tsx";
+import "./App.css"
+import {CommentsComponent} from "./components/comments-component/CommentsComponent.tsx";
+
 
 
 function App() {
 
   return (
     <>
-        < MyComponent text={'Hello 1'} />
-        < MyComponent text={'Hello 2'} />
-        < MyComponent text={'Hello 3'} />
+      <CommentsComponent/>
     </>
   )
 }

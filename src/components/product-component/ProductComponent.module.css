@@ -1,0 +1,91 @@
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    max-width: 100%; /* Ограничиваем максимальную ширину */
+    overflow-wrap: break-word; /* Предотвращаем выход текста за пределы */
+}
+
+.product-header h1 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+    color: #333;
+    word-break: break-word; /* Разрешаем перенос длинных слов */
+}
+
+.brand {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.product-images {
+    margin: 15px 0;
+    max-width: 100%; /* Ограничиваем ширину контейнера с изображениями */
+}
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    max-height: 400px; /* Ограничиваем высоту главного изображения */
+    object-fit: contain; /* Сохраняем пропорции */
+}
+
+.additional-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px; /* Добавляем отступ для скроллбара */
+}
+
+.additional-images img {
+    width: 60px; /* Уменьшаем размер дополнительных изображений */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0; /* Предотвращаем сжатие изображений */
+}
+
+/* Остальные стили остаются без изменений */
+.description {
+    color: #666;
+    line-height: 1.5;
+}
+
+.price-section {
+    margin: 15px 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+.discount {
+    color: #e74c3c;
+    margin-left: 10px;
+}
+
+.product-stats {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.tag {
+    background: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #666;
+    margin: 2px;
+}
+
+.review {
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+}

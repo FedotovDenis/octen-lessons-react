@@ -7,7 +7,10 @@ const UsersComponent = () => {
     const [users, setUsers] = useState<IUser[]>([])
 
     useEffect(() => {
-        userService.getUsers().then((allUsers: IUser[]) => {
+
+        userService
+            .getUsers()
+            .then((allUsers: IUser[]) => {
             setUsers(allUsers)
         })
     }, []);

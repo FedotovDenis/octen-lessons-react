@@ -1,15 +1,16 @@
 import './App.css'
-import MyComponent from "./components/MyComponent.tsx";
+import { Outlet } from "react-router-dom";
+import { Menu } from "./components/menu/Menu";
 
 
 function App() {
 
   return (
-    <>
-        < MyComponent text={'Hello 1'} />
-        < MyComponent text={'Hello 2'} />
-        < MyComponent text={'Hello 3'} />
-    </>
+    <div>
+      <Menu />
+      This is App component
+      <Outlet />
+    </div>
   )
 }
 

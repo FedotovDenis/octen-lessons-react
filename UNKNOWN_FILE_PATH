@@ -1,0 +1,11 @@
+    useEffect(() => {
+        loadTodos().then(value => setTodos(value))
+    }, [])
+    return(
+        <div>
+            {
+                todos.map(post => <TodoComponent todo={post} key={post.id}/>)
+            }
+        </div>
+    )
+}

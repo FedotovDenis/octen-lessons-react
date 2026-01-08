@@ -6,10 +6,10 @@ export const Menu = () => {
         <div>
             <ul>
                 <li>
-                    <Link to={'/users/jsonplaceholder'}>Page Users JSONPlaceholder</Link>
+                    <Link to={'/users/jsonplaceholder'}>Users JSONPlaceholder</Link>
                 </li>
                 <li>
-                    <Link to={'/users/dummyjson'}>Page Users DummyJson</Link>
+                    <Link to={'/users/dummyjson'}>Users DummyJson</Link>
                 </li>
                 <li>
                     <Link to={'/posts/jsonplaceholder'}>Page Posts JSONPlaceholder</Link>

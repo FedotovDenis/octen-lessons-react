@@ -1,9 +1,9 @@
-import { PageCommentsJSONPlaceholderComponent } from "../../components/menu/comments/PageCommentsJSONPlaceholderComponent";
+import { CommentsJSONPlaceholderComponent } from "../../components/menu/comments/CommentsJSONPlaceholderComponent";
 
 export const PageCommentsJSONPlaceholder = () => {
     return (
         <div>
-            <PageCommentsJSONPlaceholderComponent />
+            <CommentsJSONPlaceholderComponent />
         </div>
     );
 };

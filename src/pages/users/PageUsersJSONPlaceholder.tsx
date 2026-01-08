@@ -1,12 +1,9 @@
-import { PageUsersJSONPlaceholderComponent } from "../../components/menu/users/PageUsersJSONPlaceholderComponent";
-
-
-
+import { UsersJSONPlaceholderComponent } from "../../components/menu/users/users-json-placeholder-component/UsersJSONPlaceholderComponent";
 
 export const PageUsersJSONPlaceholder = () => {
     return (
         <div>
-            <PageUsersJSONPlaceholderComponent />
+            <UsersJSONPlaceholderComponent />
         </div>
     );
 };

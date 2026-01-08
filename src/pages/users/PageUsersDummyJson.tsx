@@ -1,11 +1,11 @@
-import { PageUsersDummyJsonComponent } from "../../components/menu/users/PageUsersDummyJsonComponent";
+import { UsersDummyJsonComponent } from "../../components/menu/users/users-dummy-json-component/UsersDummyJsonComponent";
 
 
 
 export const PageUsersDummyJson = () => {
     return (
         <div>
-            <PageUsersDummyJsonComponent />
+            <UsersDummyJsonComponent />
         </div>
     );
 };

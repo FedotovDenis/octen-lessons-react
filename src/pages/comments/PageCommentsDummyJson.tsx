@@ -1,9 +1,9 @@
-import { PageCommentsDummyJsonComponent } from "../../components/menu/comments/PageCommentsDummyJsonComponent";
+import { CommentsDummyJsonComponent } from "../../components/menu/comments/CommentsDummyJsonComponent";
 
 export const PageCommentsDummyJson = () => {
     return (
         <div>
-            <PageCommentsDummyJsonComponent />
+            <CommentsDummyJsonComponent />
         </div>
     );
 };

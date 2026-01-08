@@ -1,9 +1,9 @@
-import { PagePostsDummyJsonComponent } from "../../components/menu/posts-component/PagePostsDummyJsonComponent";
+import { PostsDummyJsonComponent } from "../../components/menu/posts-component/PostsDummyJsonComponent";
 
 export const PagePostsDummyJson = () => {
     return (
         <div>
-            <PagePostsDummyJsonComponent />
+            <PostsDummyJsonComponent />
         </div>
     );
 };

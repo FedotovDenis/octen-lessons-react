@@ -1,9 +1,9 @@
-import { PagePostsJSONPlaceholderComponent } from "../../components/menu/posts-component/PagePostsJSONPlaceholderComponent";
+import { PostsJSONPlaceholderComponent } from "../../components/menu/posts-component/PostsJSONPlaceholderComponent";
 
 export const PagePostsJSONPlaceholder = () => {
     return (
         <div>
-            <PagePostsJSONPlaceholderComponent />
+            <PostsJSONPlaceholderComponent />
         </div>
     );
 };

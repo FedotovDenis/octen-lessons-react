@@ -2,6 +2,7 @@ import { useSearchParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import type { IUser } from "../../models/IUser"
 import { apiService } from "../../services/api.service"
+import { UserComponent } from "./UserComponent"
 
 export const UsersComponent = () => {
     const [query] = useSearchParams()
@@ -31,7 +32,7 @@ export const UsersComponent = () => {
             ) : (
                 <ul>
                     {users.map(user => (
-                        <li key={user.id}>{user.firstName} {user.lastName}</li>
+                        <UserComponent key={user.id} item={user} />
                     ))}
                 </ul>
             )}

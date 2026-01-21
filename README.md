@@ -1,3 +1,3 @@
 # React + TypeScript + Vite
 
-// useForm hook
+// useForm. Базова валідація

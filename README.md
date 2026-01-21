@@ -1,3 +1,3 @@
 # React + TypeScript + Vite
 
-// useForm. Базова валідація
+// useForm. Валідація через Joi

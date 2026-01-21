@@ -1,3 +1,3 @@
 # React + TypeScript + Vite
 
-// Контрольовані компоненти та форми
+// useForm hook

@@ -1,26 +1,18 @@
-import { LeftBranch } from './components/LeftBranch';
-import { RightBranch } from './components/RightBranch';
-import { init, MyContext } from './context/MyContext';
-import { useState } from 'react';
+import React from 'react';
 import './App.css';
+import { useFetch } from './hooks/useFetch';
+import { UserList } from './components/UserList';
+import type { User } from './types/user';
 
+const App = () => {
+  const { data: users, isLoading, error } = useFetch<User[]>('https://jsonplaceholder.typicode.com/users');
 
-function App() {
-
-  const [counter, setCounter] = useState<number>(init.counterValue);
   return (
-    <>
-    <MyContext.Provider value={{
-        counterValue: counter,
-        increment: (val: number) => { 
-            setCounter(val + 1);
-        }}}>
-
-        <LeftBranch />
-        <RightBranch />
-    </MyContext.Provider>
-    </>
-  )
+    <div className="app">
+      <h1>React Fetch Example</h1>
+      <UserList users={users} isLoading={isLoading} error={error} />
+    </div>
+  );
 }
 
-export default App
+export default App;

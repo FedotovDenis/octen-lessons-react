@@ -1,17 +1,23 @@
 import React from 'react';
-import './App.css';
-import { useFetch } from './hooks/useFetch';
-import { UserList } from './components/UserList';
-import type { User } from './types/user';
+import { ComponentA } from './components/componentA';
+import { ComponentB } from './components/componentB';
+import { MyContext } from './context/MyContextProvaider';
+import { useState } from 'react';
 
-const App = () => {
-  const { data: users, isLoading, error } = useFetch<User[]>('https://jsonplaceholder.typicode.com/users');
+export const App = () => {
 
+  const [themeColor, setThemeColor] = useState<string>('light');
+  
   return (
-    <div className="app">
-      <h1>React Fetch Example</h1>
-      <UserList users={users} isLoading={isLoading} error={error} />
+    <div>
+      <MyContext.Provider value={{ theme: themeColor, changeTheme: (themeValue: string) => {
+        setThemeColor(themeValue)
+      } }}>
+        <ComponentA/>
+        <ComponentB/>
+      </MyContext.Provider>
     </div>
+    
   );
 }
 

@@ -3,7 +3,12 @@ import {useAppDispatch, useAppSelector} from "../redux/store";
 import {commentActions} from "../redux/slices/CommentSlice";
 import {userActions} from "../redux/slices/UserSlice";
 import {postActions} from "../redux/slices/PostSlice";
-
+import { UserItem } from '../components/UserItem';
+import { PostItem } from '../components/PostItem';
+import { CommentItem } from '../components/CommentItem';
+import type { IUser } from '../models/IUser';
+import type { IPost } from '../models/IPost';
+import type { IComment } from '../models/IComments';
 
 
 export const ComplexPage = () => {
@@ -22,8 +27,21 @@ export const ComplexPage = () => {
     }, []);
 
     return (
-        <>
-            {/* Тут тоже ментор сказал что знаете как сделать и сами и допишите дописать */}
-        </>
-    )
-}
+    <>
+        {users.map((user: IUser) => (
+            <div key={user.id}>
+                <UserItem user={user} />
+
+                {posts.filter((post: IPost) => post.userId === user.id).map((post: IPost) => (
+                    <div key={post.id}>
+                        <PostItem post={post} />
+
+                        {comments.filter((comment: IComment) => comment.postId === post.id).map((comment: IComment) => (
+                            <CommentItem key={comment.id} comment={comment} />
+                        ))}
+                    </div>
+                ))}
+            </div>
+        ))}
+    </>
+)}

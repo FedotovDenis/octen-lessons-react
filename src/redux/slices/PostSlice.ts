@@ -11,11 +11,10 @@ type PostSliceType = {
     posts: IPost[]
 }
 
-const initPostSliceState: PostSliceType = {posts: []}
+const initPostSliceState: PostSliceType = { posts: [] }
 
 const loadPosts = createAsyncThunk("loadPosts", async (_, thunkAPI) => {
     const posts = await getAll<IPost[]>("/posts");
-    console.log(posts);
     return thunkAPI.fulfillWithValue(posts);
 });
 
@@ -28,4 +27,4 @@ export const postSlice = createSlice({
     })
 });
 
-export const postActions = {...postSlice.actions, loadPosts};
+export const postActions = { ...postSlice.actions, loadPosts };

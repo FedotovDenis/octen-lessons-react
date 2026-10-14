@@ -9,7 +9,7 @@ type CommentItemPropType = {
 
 export const CommentItem: FC<CommentItemPropType> = ({ comment }) => {
     return (
-        <div>
+        <div className="comment-card">
             <h4>Коментарі: {comment.name}</h4>
             <p>Текст коментарів: {comment.body}</p>
         </div>

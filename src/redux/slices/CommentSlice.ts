@@ -12,11 +12,10 @@ type CommentSliceType = {
     comments: IComment[]
 }
 
-const initCommentSliceState: CommentSliceType = {comments: []}
+const initCommentSliceState: CommentSliceType = { comments: [] }
 
 const loadComments = createAsyncThunk("loadComments", async (_, thunkAPI) => {
     const comments = await getAll<IComment[]>("/comments");
-    console.log(comments);
     return thunkAPI.fulfillWithValue(comments);
 })
 
@@ -29,4 +28,4 @@ export const commentSlice = createSlice({
     })
 });
 
-export const commentActions = {...commentSlice.actions, loadComments};
+export const commentActions = { ...commentSlice.actions, loadComments };

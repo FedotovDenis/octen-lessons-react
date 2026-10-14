@@ -11,9 +11,9 @@ type UserSliceType = {
     users: IUser[]
 }
 
-const initUserSliceState: UserSliceType = {users: []}
+const initUserSliceState: UserSliceType = { users: [] }
 
-// Тут при не обходимости можнол сделать обработку ошибок, например через try/catch
+// Тут при необходимости можно сделать обработку ошибок, например через try/catch
 const loadUsers = createAsyncThunk("loadUsers", async (_, thunkAPI) => {
     const users = await getAll<IUser[]>("/users");
     return thunkAPI.fulfillWithValue(users);
@@ -29,4 +29,4 @@ export const userSlice = createSlice({
     })
 });
 
-export const userActions = {...userSlice.actions, loadUsers};
+export const userActions = { ...userSlice.actions, loadUsers };

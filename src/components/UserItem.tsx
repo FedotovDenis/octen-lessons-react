@@ -10,7 +10,7 @@ type UserItemPropType = {
 
 export const UserItem: FC<UserItemPropType> = ({ user }) => {
     return (
-        <div>
+        <div className="user-card">
             <h4>Ім'я: {user.name} Нікнейм: {user.username}</h4>
             <p>email: {user.email}</p>
             <p>phone: {user.phone}</p>
